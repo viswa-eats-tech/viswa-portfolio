@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { Send, Check, Mail } from "lucide-react"
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "../brand-icons"
+import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from "../brand-icons"
 import { profile } from "@/lib/portfolio-data"
 
 export function ContactApp() {
@@ -85,7 +85,7 @@ export function ContactApp() {
         <ContactLink href={`mailto:${profile.email}`} icon={<Mail className="h-4 w-4" />} label="Email" />
         <ContactLink href={profile.github} icon={<GithubIcon className="h-4 w-4" />} label="GitHub" />
         <ContactLink href={profile.linkedin} icon={<LinkedinIcon className="h-4 w-4" />} label="LinkedIn" />
-        <ContactLink href={profile.twitter} icon={<TwitterIcon className="h-4 w-4" />} label="Twitter" />
+        <ContactLink href={profile.instagram} icon={<InstagramIcon className="h-4 w-4" />} label="Instagram" />
       </div>
     </div>
   )

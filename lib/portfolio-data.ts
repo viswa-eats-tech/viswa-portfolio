@@ -2,23 +2,37 @@
 // Edit this file to customize the portfolio with your own details.
 
 export const profile = {
-  name: "Alex Rivera",
-  handle: "alexrivera",
-  role: "Senior Software Engineer",
-  tagline: "I build delightful, high-performance products for the web.",
-  location: "San Francisco, CA",
-  avatarInitials: "AR",
-  email: "alex@riveradev.io",
-  phone: "+1 (415) 555-0132",
-  website: "riveradev.io",
-  github: "https://github.com/alexrivera",
-  githubUser: "alexrivera",
-  linkedin: "https://linkedin.com/in/alexrivera",
-  twitter: "https://twitter.com/alexrivera",
+  name: "Gaddam Viswavijeth",
+  handle: "viswa-eats-tech",
+
+  role: "Software Engineer | Full-Stack Developer | AI Enthusiast",
+
+  tagline:
+    "Building scalable backend systems, distributed applications, and AI-powered products.",
+
+  location: "Visakhapatnam, India",
+
+  avatarInitials: "GV",
+
+  email: "cs23bt076@iitdh.ac.in",
+
+  phone: "+91 7842909100",
+
+  website: "",
+
+  github: "https://github.com/viswa-eats-tech",
+  githubUser: "viswa-eats-tech",
+
+  linkedin: "https://www.linkedin.com/in/gaddam-viswavijeth-76b719295/",
+
+  instagram: "https://www.instagram.com/vis_whooo/",
+
   bio: [
-    "I'm a product-minded engineer with 8+ years shipping software that people love. I specialize in the intersection of design and engineering — building interfaces that feel fast, intentional, and human.",
-    "Most recently I led frontend architecture for a fintech platform serving millions of users. I care deeply about performance, accessibility, and the small details that make software feel premium.",
-    "When I'm not coding, you'll find me photographing city streets, tinkering with synthesizers, or chasing good espresso.",
+    "I'm a Computer Science undergraduate at IIT Dharwad passionate about building scalable backend systems, distributed applications, and AI-powered products. I enjoy turning complex ideas into clean, reliable software.",
+
+    "Outside of coding, you'll usually find me at the gym, swimming, listening to music, or diving into films—I'm a huge cinephile who enjoys everything from commercial blockbusters to thought-provoking cinema.",
+
+    "When I'm not doing any of that, I'm probably grinding ranked games, exploring new technologies, contributing to side projects, or learning something that makes me a better engineer.",
   ],
 }
 
@@ -34,43 +48,52 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    company: "Northwind Financial",
-    role: "Senior Software Engineer",
-    period: "2022 — Present",
-    location: "San Francisco, CA",
-    summary: "Leading frontend architecture for a consumer fintech platform used by 4M+ people.",
+    company: "Accenture",
+    role: "Advanced Application Engineering Analyst Intern",
+    period: "May 2026 — Jul 2026",
+    location: "Chennai, India",
+    summary:
+      "Researched enterprise Agentic AI adoption in the Japanese market and developed AI-powered solutions for elder care.",
     highlights: [
-      "Rebuilt the core dashboard, cutting time-to-interactive by 62%.",
-      "Established a design system adopted across 6 product teams.",
-      "Mentored 5 engineers and led the frontend hiring loop.",
+      "Conducted market research on enterprise Agentic AI adoption in the Japanese market, authoring a technical white paper analyzing buyer demand, AI governance, cloud ecosystems, and deployment opportunities across healthcare, manufacturing, BFSI, retail, and government sectors.",
+      "Built a prototype called ElderCareAI, a multi-agent AI system for Japanese elder care facilities, orchestrating specialized agents for ML-based health anomaly detection, fall-risk monitoring, caregiver scheduling, and LLM-generated caregiver summaries using Ollama + LLaMA2, with an offline-first architecture for edge deployment.",
+      "Identified white-space opportunities for Agentic AI adoption across multiple industries and proposed domain-specific enterprise solutions and investment opportunities, enabling Accenture to evaluate potential AI service offerings for the Japanese market.",
     ],
-    tags: ["React", "Next.js", "TypeScript", "GraphQL"],
+    tags: [
+      "Agentic AI",
+      "Ollama",
+      "LLaMA2",
+      "scikit-learn",
+      "Flask",
+      "SQLite",
+      "Machine Learning",
+      "Research",
+    ],
   },
+
   {
-    company: "Lumen Labs",
-    role: "Software Engineer",
-    period: "2019 — 2022",
-    location: "Remote",
-    summary: "Built data-heavy analytics products from zero to one.",
+    company: "TP Vision",
+    role: "Software Development Engineer Intern",
+    period: "May 2025 — Jul 2025",
+    location: "Bengaluru, India",
+    summary:
+      "Developed scalable backend services and enterprise admin portal features for display device management.",
     highlights: [
-      "Shipped a real-time visualization engine handling 100k events/sec.",
-      "Drove adoption of end-to-end type safety across the stack.",
-      "Owned the component library used by the entire org.",
+      "Developed scalable RESTful APIs using Fastify and TypeBox with MongoDB and PostgreSQL, implementing a hybrid backend architecture integrated with GraphQL for efficient data retrieval; developed responsive, component-driven interfaces for the Admin Portal using React.js.",
+      "Designed and implemented the Unclaim workflow within the Admin Portal, enabling secure revocation and reassignment of display licenses and application subscriptions for deactivated devices across customer accounts.",
+      "Developed a centralized display management interface in the Admin Portal to streamline device monitoring, management, and operational workflows.",
+      "Integrated AWS Simple Email Service (SES) for secure transactional email delivery, enabling authentication and authorization of the Unclaim workflow while reducing manual intervention.",
     ],
-    tags: ["React", "D3", "Node.js", "WebSockets"],
-  },
-  {
-    company: "Pixel Forge",
-    role: "Frontend Developer",
-    period: "2017 — 2019",
-    location: "Austin, TX",
-    summary: "Crafted marketing sites and web apps for early-stage startups.",
-    highlights: [
-      "Delivered 20+ client projects with a 98% satisfaction rate.",
-      "Introduced automated visual regression testing.",
-      "Reduced average bundle size by 40% across projects.",
+    tags: [
+      "Fastify",
+      "TypeBox",
+      "GraphQL",
+      "MongoDB",
+      "PostgreSQL",
+      "React.js",
+      "AWS SES",
+      "REST API",
     ],
-    tags: ["JavaScript", "Vue", "CSS", "Webpack"],
   },
 ]
 
@@ -87,48 +110,66 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Aperture",
-    description: "A GPU-accelerated image editor that runs entirely in the browser.",
+    name: "Wellness Centre Notification System",
+    description:
+      "Real-time IoT nurse-call system with Node.js/Socket.IO backend, React Native mobile app, and live TV displays.",
     longDescription:
-      "Aperture brings desktop-grade photo editing to the web using WebGL and WebAssembly. Non-destructive layers, real-time filters, and a plugin API.",
-    tags: ["WebGL", "WASM", "React", "Rust"],
-    link: "#",
-    repo: "https://github.com/alexrivera/aperture",
-    accent: "#0a84ff",
+      "Designed and developed a real-time bidirectional communication backend using Node.js, Express.js, and Socket.IO, serving three concurrent client types — React Native mobile app, nurse station display, and reception TV — with sub-second event propagation. Architected a REST + WebSocket hybrid API with role-based authentication and CIDR-based IP validation for network-layer access control. Deployed on a Raspberry Pi display server with PM2 for zero-touch boot operation.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "React Native",
+      "Raspberry Pi",
+      "PM2",
+      "REST API",
+      "WebSocket",
+    ],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/WellnessCentreBuzzerApp.",
+    accent: "#0A84FF",
+    year: "2026",
+  },
+
+  {
+    name: "DataFort — Blockchain-Based Secure File Storage",
+    description:
+      "Distributed file storage platform using a private permissioned blockchain and decentralized IPFS storage.",
+    longDescription:
+      "Developed the complete Node.js/Express.js backend implementing all server-side routes for user registration, login, file upload, and retrieval. Engineered the file ingestion pipeline streaming files to a local IPFS node, persisting content hashes (CIDs) to MongoDB. Implemented session-based authentication with role-based access control, and integrated the Exonum private permissioned blockchain (Proof of Authority) for tamper-evident audit trails.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "IPFS",
+      "Exonum Blockchain",
+      "Proof of Authority",
+      "REST API",
+    ],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/DataFort-Inc.",
+    accent: "#30D158",
     year: "2024",
   },
+
   {
-    name: "Cadence",
-    description: "A calendar that learns how you work and protects your focus time.",
+    name: "College Library Management System",
+    description:
+      "Full-stack library portal with role-based access; backend-led contribution.",
     longDescription:
-      "Cadence uses on-device heuristics to auto-schedule deep work blocks and defend them from meeting overload. Built with a local-first sync engine.",
-    tags: ["Next.js", "SQLite", "Local-first"],
-    link: "#",
-    repo: "https://github.com/alexrivera/cadence",
-    accent: "#ff375f",
-    year: "2023",
-  },
-  {
-    name: "Harbor",
-    description: "Self-hostable deployment platform with a beautiful CLI and dashboard.",
-    longDescription:
-      "Harbor makes deploying containers as simple as `harbor up`. Real-time logs, rollbacks, and preview environments out of the box.",
-    tags: ["Go", "Docker", "React", "gRPC"],
-    link: "#",
-    repo: "https://github.com/alexrivera/harbor",
-    accent: "#30d158",
-    year: "2023",
-  },
-  {
-    name: "Synth Studio",
-    description: "A polyphonic web synthesizer with a modular patching interface.",
-    longDescription:
-      "Synth Studio is a full Web Audio synthesizer with oscillators, filters, and a drag-to-patch modular canvas. MIDI support included.",
-    tags: ["Web Audio", "Canvas", "TypeScript"],
-    link: "#",
-    repo: "https://github.com/alexrivera/synth-studio",
-    accent: "#ff9f0a",
-    year: "2022",
+      "Developed the complete Node.js/Express.js backend implementing all RESTful API routes for book issuance, returns, reservations, and availability queries, with session middleware enforcing role-based access control between admin and student accounts. Designed the MySQL relational schema and wrote optimized queries for real-time availability checks and overdue detection. Integrated EJS server-side templating for role-specific dashboards.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "EJS",
+      "REST API",
+      "Session Auth",
+    ],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/The-DOMinators",
+    accent: "#FF9F0A",
+    year: "2024",
   },
 ]
 
@@ -141,51 +182,97 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Languages",
     skills: [
-      { name: "TypeScript", level: 95 },
-      { name: "JavaScript", level: 95 },
-      { name: "Python", level: 80 },
-      { name: "Rust", level: 65 },
-      { name: "Go", level: 70 },
+      { name: "C", level: 90 },
+      { name: "C++", level: 90 },
+      { name: "Java", level: 82 },
+      { name: "JavaScript", level: 90 },
+      { name: "TypeScript", level: 85 },
+      { name: "Python", level: 85 },
     ],
   },
+
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", level: 95 },
+      { name: "Express.js", level: 92 },
+      { name: "Fastify", level: 88 },
+      { name: "GraphQL", level: 88 },
+      { name: "Socket.IO", level: 85 },
+      { name: "REST API", level: 92 },
+    ],
+  },
+
   {
     category: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "Next.js", level: 92 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Framer Motion", level: 85 },
+      { name: "React.js", level: 88 },
+      { name: "React Native", level: 80 },
+      { name: "Next.js", level: 78 },
+      { name: "Tailwind CSS", level: 82 },
+      { name: "EJS", level: 80 },
     ],
   },
+
   {
-    category: "Backend & Data",
+    category: "Databases",
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "PostgreSQL", level: 82 },
-      { name: "GraphQL", level: 80 },
-      { name: "Redis", level: 75 },
+      { name: "MongoDB", level: 90 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "MySQL", level: 88 },
+      { name: "SQLite", level: 78 },
+      { name: "Supabase", level: 78 },
     ],
   },
+
   {
-    category: "Tooling",
+    category: "AI/ML",
+    skills: [
+      { name: "scikit-learn", level: 80 },
+      { name: "pandas", level: 78 },
+      { name: "joblib", level: 75 },
+      { name: "Ollama", level: 78 },
+      { name: "LLaMA2", level: 75 },
+      { name: "Flask", level: 78 },
+    ],
+  },
+
+  {
+    category: "Tools & DevOps",
     skills: [
       { name: "Git", level: 92 },
-      { name: "Docker", level: 80 },
-      { name: "CI/CD", level: 82 },
-      { name: "Figma", level: 78 },
+      { name: "Docker", level: 78 },
+      { name: "PM2", level: 80 },
+      { name: "AWS SES", level: 75 },
+      { name: "Postman", level: 85 },
+      { name: "MongoDB Compass", level: 82 },
+      { name: "Arduino IDE", level: 72 },
     ],
   },
 ]
 
 export const education = [
   {
-    school: "University of California, Berkeley",
-    degree: "B.S. Electrical Engineering & Computer Science",
-    period: "2013 — 2017",
+    school: "Indian Institute of Technology Dharwad",
+    degree: "B.Tech in Computer Science and Engineering",
+    period: "Aug 2023 — Jul 2027",
+    details: "CGPA: 8.81",
+  },
+  {
+    school: "Board of Intermediate Education, Andhra Pradesh",
+    degree: "Senior Secondary Education (Class XII)",
+    period: "Apr 2022 — Apr 2023",
+    details: "Percentage: 96.3%",
+  },
+  {
+    school: "Indian Certificate of Secondary Education (ICSE)",
+    degree: "Secondary Education (Class X)",
+    period: "Apr 2020 — Apr 2021",
+    details: "Percentage: 96.2%",
   },
 ]
 
 export const certifications = [
-  "AWS Certified Solutions Architect",
-  "Google UX Design Professional Certificate",
+  "Finlatics Machine Learning Program — Finlatics (Mar 2025)",
+  "First Place — College Library Management System, Coding Club SOI Event, IIT Dharwad (Sep 2024)",
 ]

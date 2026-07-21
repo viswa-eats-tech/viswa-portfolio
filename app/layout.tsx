@@ -14,10 +14,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Alex Rivera — Portfolio OS',
+  title: 'Viswavijeth - Portfolio',
   description:
     'A premium developer portfolio built as an interactive macOS-inspired operating system.',
-  generator: 'v0.app',
 }
 
 export const viewport: Viewport = {
