@@ -1,6 +1,7 @@
 "use client"
 
-import { MapPin, Mail, Globe, Github, Linkedin } from "lucide-react"
+import { MapPin, Mail, Globe } from "lucide-react"
+import { GithubIcon, LinkedinIcon } from "../brand-icons"
 import { profile } from "@/lib/portfolio-data"
 
 export function AboutApp() {
@@ -50,7 +51,7 @@ export function AboutApp() {
           rel="noreferrer"
           className="flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-3 py-1.5 text-sm transition hover:bg-foreground/10"
         >
-          <Github className="h-4 w-4" /> GitHub
+          <GithubIcon className="h-4 w-4" /> GitHub
         </a>
         <a
           href={profile.linkedin}
@@ -58,7 +59,7 @@ export function AboutApp() {
           rel="noreferrer"
           className="flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-3 py-1.5 text-sm transition hover:bg-foreground/10"
         >
-          <Linkedin className="h-4 w-4" /> LinkedIn
+          <LinkedinIcon className="h-4 w-4" /> LinkedIn
         </a>
       </div>
     </div>

@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "motion/react"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
+import { GithubIcon } from "../brand-icons"
 import { projects } from "@/lib/portfolio-data"
 
 export function ProjectsApp() {
@@ -48,7 +49,7 @@ export function ProjectsApp() {
                   rel="noreferrer"
                   className="flex items-center gap-1.5 text-xs font-medium text-foreground/80 transition hover:text-foreground"
                 >
-                  <Github className="h-3.5 w-3.5" /> Code
+                  <GithubIcon className="h-3.5 w-3.5" /> Code
                 </a>
                 <a
                   href={p.link}

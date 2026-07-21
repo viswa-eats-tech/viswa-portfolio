@@ -104,7 +104,7 @@ export function Dock() {
           onClick={() => window.open(profile.github, "_blank", "noopener,noreferrer")}
         >
           <span className="flex h-full w-full items-center justify-center rounded-2xl bg-gradient-to-br from-neutral-600 to-neutral-900 text-white shadow-inner">
-            <Github className="h-1/2 w-1/2" />
+            <GithubIcon className="h-1/2 w-1/2" />
           </span>
         </DockItem>
       </motion.nav>
