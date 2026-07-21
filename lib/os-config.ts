@@ -49,7 +49,7 @@ export const APPS: Record<AppId, AppMeta> = {
   },
   resume: {
     id: "resume",
-    title: "Résumé",
+    title: "Resume",
     icon: "FileText",
     gradient: "from-rose-400 to-red-600",
     defaultSize: { width: 700, height: 600 },

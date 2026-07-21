@@ -18,7 +18,7 @@ export const profile = {
 
   phone: "+91 7842909100",
 
-  website: "",
+  website: "https://viswaportfolio-td.vercel.app",
 
   github: "https://github.com/viswa-eats-tech",
   githubUser: "viswa-eats-tech",
