@@ -134,6 +134,29 @@ export const projects: Project[] = [
   },
 
   {
+    name: "ElderCareAI — Multi-Agent AI System",
+    description:
+      "Offline-first multi-agent AI system for elderly care with health monitoring, fall detection, reminders, and LLM-generated caregiver summaries.",
+    longDescription:
+      "Developed a modular, privacy-first multi-agent AI system for elder care facilities. Built specialized agents for ML-based health anomaly detection (vitals monitoring), fall-risk assessment, medication/appointment reminders, and natural language caregiver summaries using Ollama + LLaMA2. Features an offline-first architecture with SQLite persistence, ideal for edge deployment in low-connectivity environments.",
+    tags: [
+      "Agentic AI",
+      "Ollama",
+      "LLaMA2",
+      "scikit-learn",
+      "Python",
+      "Flask",
+      "SQLite",
+      "Machine Learning",
+    ],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/ElderCareAi",
+    accent: "#10B981",
+    year: "2026",
+    showInResume: true,
+  },
+
+  {
     name: "DataFort — Blockchain-Based Secure File Storage",
     description:
       "Distributed file storage platform using a private permissioned blockchain and decentralized IPFS storage.",
