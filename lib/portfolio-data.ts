@@ -106,6 +106,7 @@ export type Project = {
   repo: string
   accent: string
   year: string
+  showInResume: boolean
 }
 
 export const projects: Project[] = [
@@ -129,6 +130,7 @@ export const projects: Project[] = [
     repo: "https://github.com/viswa-eats-tech/WellnessCentreBuzzerApp.",
     accent: "#0A84FF",
     year: "2026",
+    showInResume: true,
   },
 
   {
@@ -150,6 +152,7 @@ export const projects: Project[] = [
     repo: "https://github.com/viswa-eats-tech/DataFort-Inc.",
     accent: "#30D158",
     year: "2024",
+    showInResume: true,
   },
 
   {
@@ -170,6 +173,87 @@ export const projects: Project[] = [
     repo: "https://github.com/viswa-eats-tech/The-DOMinators",
     accent: "#FF9F0A",
     year: "2024",
+    showInResume: true,
+  },
+  {
+    name: "The Vardhan Store",
+    description:
+      "Premium ornament e-commerce platform with user portal, admin dashboard, and Supabase-powered backend.",
+    longDescription:
+      "Built a full-stack e-commerce platform for premium ornaments using React 18, TypeScript, and Tailwind CSS. Implemented a user portal with product browsing, category filtering, and search, alongside a secure admin dashboard for inventory management. Designed a PostgreSQL schema on Supabase with Row Level Security across five tables and integrated Supabase Auth for session-based email/password authentication. Deployed on Vercel with a CI/CD pipeline via GitHub Actions.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vite",
+      "React Router",
+    ],
+    link: "https://vardan-store.vercel.app/",
+    repo: "https://github.com/viswa-eats-tech/Vardhan-Store",
+    accent: "#FF6B6B",
+    year: "2025",
+    showInResume: false,
+  },
+
+  {
+    name: "Abhikalpa — IIT Dharwad Design Club Website",
+    description:
+      "Official web platform for Abhikalpa, the Design Club of IIT Dharwad, with auth, merch cart, and animated landing page.",
+    longDescription:
+      "Built the full-stack website for Abhikalpa, IIT Dharwad's design club, using React, Vite, and Tailwind CSS. Implemented a component-driven frontend with cursor-reactive hero animations, scroll-triggered reveals via Intersection Observer, a trivia carousel, featured works grid, and an interactive design challenge generator. Integrated Supabase Auth for user login, signup, and persistent sessions, along with a merch page and cart system using React Context. Built a Node.js/Express backend with Nodemailer for HTML-styled transactional emails via a contact form API. Deployed on Vercel with a ~85KB gzipped production bundle.",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Supabase",
+      "Node.js",
+      "Express",
+      "Nodemailer",
+      "JavaScript",
+    ],
+    link: "https://designclub-beta.vercel.app",
+    repo: "https://github.com/viswa-eats-tech/IITDH_Design_Club_Website",
+    accent: "#A855F7",
+    year: "2025",
+    showInResume: false,
+  },
+
+  {
+    name: "ML Model Benchmarking — AI Course Project",
+    description:
+      "Comparative ML study implementing Linear Regression, Polynomial Regression, KNN, and Neural Networks from scratch with full performance analysis.",
+    longDescription:
+      "Implemented and benchmarked four machine learning models — Linear Regression, Polynomial Regression, KNN Classifier, and Neural Network (both classification and regression) — as part of the AI course at IIT Dharwad. Built a data preprocessing pipeline for train/val/test splits, trained each model, and evaluated performance using dedicated metrics CSVs. Developed a PerformanceAnalyser module for cross-model comparison across error and accuracy metrics.",
+    tags: [
+      "Python",
+      "NumPy",
+      "scikit-learn",
+      "Neural Networks",
+      "KNN",
+      "Linear Regression",
+      "Jupyter Notebook",
+    ],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/AI-Project",
+    accent: "#F59E0B",
+    year: "2025",
+    showInResume: false,
+  },
+
+  {
+    name: "Processor & Cache Simulator — CS311 Lab",
+    description:
+      "Simulators for a custom RISC-based ISA and pipelined processor with cache hierarchy analysis, built as IIT Dharwad coursework.",
+    longDescription:
+      "Developed simulators for a custom RISC-based ISA and pipelined processor across 6 lab assignments and an end-semester exam. Simulated cache hierarchies and analyzed hit/miss rates for performance optimization. Verified correctness through custom-written assembly programs.",
+    tags: ["Java", "Python", "Assembly", "Computer Architecture", "RISC", "Cache Simulation"],
+    link: "",
+    repo: "https://github.com/viswa-eats-tech/CS311-Computer-Architecture-Lab",
+    accent: "#06B6D4",
+    year: "2025",
+    showInResume: false,
   },
 ]
 

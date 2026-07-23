@@ -142,7 +142,7 @@ export function ResumeApp() {
 
         {/* Projects */}
         <ResumeSection title="Projects">
-          {projects.map((p) => (
+          {projects.filter((p) => p.showInResume).map((p) => (
             <div key={p.name} className="mb-3 last:mb-0">
               <div className="flex justify-between items-start">
                 <div>
